@@ -1,5 +1,5 @@
 #create a function to import  and image and resize it to be able to be used with our model
-def load_and_prep_image(filename, img_shape=2224):
+def load_and_prep_image(filename, img_shape=224):
   #reads an image from filename, turns into tensor and reshapes it to (img_shape, img_shape, colour_channels)
   # read in the image
   img = tf.io.read_file(filename)# io = in out
