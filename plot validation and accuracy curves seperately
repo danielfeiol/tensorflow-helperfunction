@@ -17,8 +17,8 @@ def plot_loss_curves(history) : #returns sperate loss curves for training and va
 
   # plot accuracy
   plt.figure()
-  plt.plot(epochs, loss, label='training_accuracy')
-  plt.plot(epochs, val_loss, label='val_accuracy')
+  plt.plot(epochs, accuracy, label='training_accuracy')
+  plt.plot(epochs, val_accuracy, label='val_accuracy')
   plt.title('accuracy')
   plt.xlabel('epochs')
   plt.legend()
